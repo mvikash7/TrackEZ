@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "129173588408",
+    "project_id": "trackez-6c744",
+    "storage_bucket": "trackez-6c744.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:129173588408:android:37404a2bb849f0edf0e74d",
+        "android_client_info": {
+          "package_name": "com.example.first_application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "129173588408-gu59i0ghpk6lk8cjp0u4fho4m3u9gbnt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBflHJbIVJY_g0tRIzGkJYr_2sM2xxKmSk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "129173588408-gu59i0ghpk6lk8cjp0u4fho4m3u9gbnt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
