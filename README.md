@@ -35,10 +35,17 @@ Supports managers with forecasting device requirement based on their project / p
 Future possibilities to scale the solution to other areas in FSM and FBS 
 
 
-# PROPOSED MVP
-<image to be uploaded>
+# PROPOSED MVP FEATURES
   
+<img width="1312" alt="TrackEZ" src="https://user-images.githubusercontent.com/42070737/219647518-49861a9e-6bb1-4aba-ab31-388d4f9c0aea.png">
 
+
+# Design Prototypes (LFD: Invision)
+
+<img width="796" alt="TrackEZ-Summary" src="https://user-images.githubusercontent.com/42070737/219653178-da32701b-114c-4b41-aa8d-baab61be37a7.png">
+
+# Functional Workflow
+![Workflow](https://user-images.githubusercontent.com/42070737/219650968-f9b15105-f2f1-43df-817a-176f3492c85e.jpg)
 
 
 ## Getting Started
