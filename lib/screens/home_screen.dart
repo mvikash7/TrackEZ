@@ -58,7 +58,6 @@ class _HomeScreenState extends State<HomeScreen> {
             final shouldLogout = await _showLogOutDialog(context);
             if (shouldLogout) {
               FirebaseAuth.instance.signOut().then((value) {
-                print("Logged Out!");
                 Navigator.pushReplacement(context,
                     MaterialPageRoute(builder: (context) => const SignInScreen()));
                 pref.clearUserDataFromCache();
@@ -91,9 +90,6 @@ class _HomeScreenState extends State<HomeScreen> {
            userType = snapshot.data()!["user type"].toString();
 
            pref.cacheUserProfileData(email!, manager!, name!, userType!);
-           print("User Type from Firebase: $userType");
-           print("Username from Firebase: $name");
-           print("Manager name from Firebase: $manager");
          });
        }
     });
@@ -106,10 +102,7 @@ class _HomeScreenState extends State<HomeScreen> {
     name = prefs.getString('userName');
     userType = prefs.getString('userType');
 
-    print("User Type: $userType");
-
     if (userType == null) {
-      print("Calling method");
       _getUserProfileDataFromFirebase();
     }
   }

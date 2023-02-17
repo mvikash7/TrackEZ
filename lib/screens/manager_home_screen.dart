@@ -1,5 +1,5 @@
-import 'package:first_application/reusable_widgets/reusable_widget.dart';
 import 'package:flutter/material.dart';
+import '../widget/reusable_widgets.dart';
 
 class Manager extends StatefulWidget {
   const Manager({super.key});

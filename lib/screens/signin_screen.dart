@@ -3,8 +3,8 @@ import 'package:first_application/screens/home_screen.dart';
 import 'package:first_application/screens/signup_screen.dart';
 import 'package:first_application/utils/validator.dart';
 import 'package:flutter/material.dart';
-import '../reusable_widgets/reusable_widget.dart';
 import 'package:flutter_overlay_loader/flutter_overlay_loader.dart';
+import '../widget/reusable_widgets.dart';
 
 class SignInScreen extends StatefulWidget {
   const SignInScreen({Key? key}) : super(key: key);

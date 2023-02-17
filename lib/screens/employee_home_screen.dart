@@ -1,6 +1,6 @@
-import 'package:first_application/reusable_widgets/reusable_widget.dart';
 import 'package:first_application/screens/book_device_screen.dart';
 import 'package:flutter/material.dart';
+import '../widget/reusable_widgets.dart';
 
 
 class Employee extends StatefulWidget {

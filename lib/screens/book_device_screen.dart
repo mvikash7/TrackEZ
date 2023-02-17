@@ -1,9 +1,9 @@
 import 'package:first_application/firebase_data/book_device_firebase.dart';
-import 'package:first_application/reusable_widgets/reusable_widget.dart';
 import 'package:first_application/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import '../widget/reusable_widgets.dart';
 
 class BookDeviceScreen extends StatefulWidget {
   const BookDeviceScreen({Key? key}) : super(key: key);
