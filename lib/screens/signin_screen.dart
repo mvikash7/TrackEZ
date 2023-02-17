@@ -16,9 +16,16 @@ class SignInScreen extends StatefulWidget {
 class _SignInScreenState extends State<SignInScreen> {
   final TextEditingController _emailTextController = TextEditingController();
   final TextEditingController _passwordTextController = TextEditingController();
+  bool _passwordVisible = true;
   final _formKeySignIn = GlobalKey<FormState>();
 
   final validator = Validator();
+
+  @override
+  void initState() {
+    super.initState();
+    _passwordVisible = false;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -65,9 +72,33 @@ class _SignInScreenState extends State<SignInScreen> {
                 padding: const EdgeInsets.all(15.0),
                 child: TextFormField (
                   controller: _passwordTextController,
-                  decoration: reusableDecoration("Enter Password", Icons.lock_outline),
+                  decoration: InputDecoration(
+                      prefixIcon: const Icon(
+                        Icons.lock_outline,
+                        color: Colors.black,
+                      ),
+                      suffixIcon: IconButton(
+                        icon: Icon(
+                          _passwordVisible
+                              ? Icons.visibility
+                              : Icons.visibility_off,
+                          color: Colors.black,
+                        ),
+                        onPressed: () {
+                          setState(() {
+                            _passwordVisible = !_passwordVisible;
+                          });
+                        },
+                      ),
+                      labelText: "Enter Password",
+                      filled: true,
+                      border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(30.0),
+                          borderSide: const BorderSide(width: 0, style: BorderStyle.none)
+                      )
+                  ),
                   validator: validator.validateLoginPassword,
-                  obscureText: true,
+                  obscureText: !_passwordVisible,
                   ),
               ),
 

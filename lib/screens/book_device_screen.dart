@@ -155,7 +155,8 @@ class _BookDeviceState extends State<BookDeviceScreen>{
                       managerName!,
                       selectedDevice,
                       _fromDateInput.text,
-                      _toDateInput.text).then((value) => {
+                      _toDateInput.text,
+                  "Awaiting approval").then((value) => {
                         showAlertDialog(context, "Booked Successfully!"),
                   }).onError((error, stackTrace) => {
                     showAlertDialog(context, "$error")
