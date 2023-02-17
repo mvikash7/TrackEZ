@@ -1,5 +1,6 @@
 
 class Validator {
+  String? _passwordText = '';
 
   String? validateUserName(String? value){
     String pattern = r'(^[a-zA-Z ]*$)';
@@ -30,6 +31,7 @@ class Validator {
   String? validatePassword(String? value){
     String pattern = r'(?=.*?[#?!@$%^&*-])';
     RegExp regExp =  RegExp(pattern);
+    _passwordText = value;
     if(value!.isEmpty){
       return '*Required Field';
     } else if(value.length <= 7){
@@ -42,16 +44,13 @@ class Validator {
   }
 
   String? validateConfirmPassword(String? value){
-    return null;
-    /*print('At the before checking ${cp} and ${p} ');
     if(value!.isEmpty){
       return '*Required Field';
-    } else if(cp != p){
-      print('inside  check ${cp} and ${p} ');
-      return 'Password did not match';
+    } else if(_passwordText!.isEmpty || value != _passwordText){
+      return 'Passwords did not match';
     }  else {
       return null;
-    }*/
+    }
   }
 
   String? validateLoginPassword(String? value){

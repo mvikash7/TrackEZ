@@ -163,7 +163,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           await showAlertDialog(context, 'Password is weak. Enter strong Password');
                           }
                         } catch (e) {
-                        await showAlertDialog(context, "Something bad happen");
+                        await showAlertDialog(context, "Please try again later!");
                         }
                     });
                   }
