@@ -1,4 +1,4 @@
-# first_application
+# TrackEZ
 
 A new Flutter project.
 
