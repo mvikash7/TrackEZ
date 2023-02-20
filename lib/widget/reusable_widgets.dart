@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../utils/constants.dart';
 
 Container signInSignUpButton(BuildContext context, bool isLogin, Function onTap) {

@@ -15,16 +15,17 @@ class SignInScreen extends StatefulWidget {
 }
 
 class _SignInScreenState extends State<SignInScreen> {
-  final TextEditingController _emailTextController = TextEditingController();
-  final TextEditingController _passwordTextController = TextEditingController();
+  late TextEditingController _emailTextController;
+  late TextEditingController _passwordTextController;
   bool _passwordVisible = true;
   final _formKeySignIn = GlobalKey<FormState>();
-
   final validator = Validator();
 
   @override
   void initState() {
     super.initState();
+    _emailTextController = TextEditingController();
+    _passwordTextController = TextEditingController();
     _passwordVisible = false;
   }
 

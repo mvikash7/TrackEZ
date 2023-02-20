@@ -16,17 +16,27 @@ class SignUpScreen extends StatefulWidget {
 }
 
 class _SignUpScreenState extends State<SignUpScreen> {
-  final TextEditingController _fullNameTextController = TextEditingController();
-  final TextEditingController _passwordTextController = TextEditingController();
-  final TextEditingController _confirmPasswordTextController = TextEditingController();
-  final TextEditingController _emailTextController = TextEditingController();
-  final TextEditingController _managerNameTextController = TextEditingController();
-
-  String userType = "employee";
+  late TextEditingController _fullNameTextController;
+  late TextEditingController _passwordTextController;
+  late TextEditingController _confirmPasswordTextController;
+  late TextEditingController _emailTextController;
+  late TextEditingController _managerNameTextController;
 
   final _formKey = GlobalKey<FormState>();
   final validator = Validator();
   final pref = SharedPref();
+
+  String userType = "employee";
+
+  @override
+  void initState() {
+    super.initState();
+    _fullNameTextController = TextEditingController();
+    _passwordTextController = TextEditingController();
+    _confirmPasswordTextController = TextEditingController();
+    _emailTextController = TextEditingController();
+    _managerNameTextController = TextEditingController();
+  }
 
   @override
   Widget build(BuildContext context) {

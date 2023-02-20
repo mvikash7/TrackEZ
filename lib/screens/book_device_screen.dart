@@ -17,13 +17,15 @@ class _BookDeviceState extends State<BookDeviceScreen>{
   String selectedDevice = "iPhone13";
   String? managerName = '';
   String? userEmail = '';
-  final TextEditingController _fromDateInput = TextEditingController();
-  final TextEditingController _toDateInput = TextEditingController();
+  late TextEditingController _fromDateInput;
+  late TextEditingController _toDateInput;
 
   @override
   void initState() {
     super.initState();
     _getUserProfileDataFromCache();
+    _fromDateInput = TextEditingController();
+    _toDateInput = TextEditingController();
   }
 
   @override
