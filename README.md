@@ -1,6 +1,6 @@
-# TrackEZ
+# TrackEZ Device Monitoring Project:
 
-# Problem :  
+# Objective: Build a sustainable & scalable process flow to efficiently track & monitor usage of digital devices in FSM FP  
 
 # Who: FSM FordPass S/w engineers, TPM, DLs
 
@@ -8,31 +8,31 @@ What: Booking or reserving a digital device (eg: Iphone, Android, Tablet, TDK, L
 
 # Why:  
 
-Powerapps based existing process is inherited from QET model & cloned for adoption
+=> Powerapps based existing process is inherited from QET model & cloned for adoption
 
-Workflow doesn’t focus on user centric features like (Reports / internal Transfer of devices / On-behalf )
+=> Workflow doesn’t focus on user centric features like (Reports / internal Transfer of devices / On-behalf )
 
-Lack of on-time device availability information for testers to plan their Application Test plan
+=> Lack of on-time device availability information for testers to plan their Application Test plan
 
-Current process doesn’t offer past usage trends & future predictability 
+=> Current process doesn’t offer past usage trends & future predictability 
 
-# Impacting / Results: 
+# Impact / Challenges: 
 
-Product features missing deliverable timeline due to delay in device availability to Testers
+=> Product features missing deliverable timeline due to delay in device availability to Testers
 
-Product quality that depends on H/w device testing is compromised.
+=> Product quality that depends on H/w device testing is compromised.
 
 # Proposed Solution:
 
-Build a mobile based device tracking application (flutter based architecture) that would enable the users with following benefits:
+=> Build a mobile based device tracking application (flutter based architecture) that would enable the users with following benefits:
 
-Anytime / anywhere access using mobile devices leveraging open source ecosystem (Firebase)
+=> Anytime / anywhere access using mobile devices leveraging open source ecosystem (Firebase)
 
-Provides features like evaluate usage metrics of devices procured, usage pattern & metrics for evaluation
+=> Provides features like evaluate usage metrics of devices procured, usage pattern & metrics for evaluation
 
-Supports managers with forecasting device requirement based on their project / product strategy & timeline
+=> Supports managers with forecasting device requirement based on their project / product strategy & timeline
 
-Future possibilities to scale the solution to other areas in FSM and FBS 
+=> Future possibilities to scale the solution to other areas in FSM and FBS 
 
 
 # PROPOSED MVP FEATURES
