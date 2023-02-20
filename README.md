@@ -1,10 +1,12 @@
 # TrackEZ Device Monitoring Project:
 
-# Objective: Build a sustainable & scalable process flow to efficiently track & monitor usage of digital devices in FSM FP  
+# Objective: 
 
-# Who: FSM FordPass S/w engineers, TPM, DLs
+Build a sustainable & scalable process flow to efficiently track & monitor usage of digital devices in FSM FP  
 
-What: Booking or reserving a digital device (eg: Iphone, Android, Tablet, TDK, Laptops, iOT devices etc) within FSM organization has been very inefficient and need improvement over entire workflow. 
+**Who:**  FSM FordPass S/w engineers, TPM, DLs
+
+**What:** Booking or reserving a digital device (eg: Iphone, Android, Tablet, TDK, Laptops, iOT devices etc) within FSM organization has been very inefficient and need improvement over entire workflow. 
 
 # Why:  
 
