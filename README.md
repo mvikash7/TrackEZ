@@ -48,3 +48,8 @@ Build a sustainable & scalable process flow to efficiently track & monitor usage
 
 # Functional Workflow
 ![Workflow](https://user-images.githubusercontent.com/42070737/219650968-f9b15105-f2f1-43df-817a-176f3492c85e.jpg)
+
+# System Architecture:
+![Arch](https://user-images.githubusercontent.com/42070737/220030102-0a53cd40-ab8c-4eb3-8919-945ffc0cb9cb.jpeg)
+
+
