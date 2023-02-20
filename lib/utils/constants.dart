@@ -21,5 +21,4 @@ class Constants {
   static const BOOKING_DATE_TO_HINT = 'Booking Date To*';
 
   static const STATUS_AWAITING_APPROVAL = 'Awaiting approval';
-
 }
