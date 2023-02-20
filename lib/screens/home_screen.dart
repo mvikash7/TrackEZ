@@ -4,6 +4,7 @@ import 'package:first_application/screens/admin_home_screen.dart';
 import 'package:first_application/screens/employee_home_screen.dart';
 import 'package:first_application/screens/manager_home_screen.dart';
 import 'package:first_application/screens/signin_screen.dart';
+import 'package:first_application/utils/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_overlay_loader/flutter_overlay_loader.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -45,7 +46,7 @@ class _HomeScreenState extends State<HomeScreen> {
             'assets/images/fordlogo.png',
             scale: 4,
           ),
-          const Center(child: Text(" TrackEZ")),
+          const Center(child: Text(Constants.TITLE_APP_NAME)),
         ],
       ),
       actions: <Widget>[

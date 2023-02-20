@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:first_application/screens/home_screen.dart';
 import 'package:first_application/screens/signup_screen.dart';
+import 'package:first_application/utils/constants.dart';
 import 'package:first_application/utils/validator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_overlay_loader/flutter_overlay_loader.dart';
@@ -46,7 +47,7 @@ class _SignInScreenState extends State<SignInScreen> {
               const Padding(
                 padding: EdgeInsets.only(top: 30.0, bottom: 20),
                 child: Text(
-                  'TRACKEZ',
+                  Constants.TITLE_APP_NAME,
                   style: TextStyle(fontSize: 40),
                 ),
               ),
@@ -54,7 +55,7 @@ class _SignInScreenState extends State<SignInScreen> {
               const Padding(
                 padding: EdgeInsets.only(top:10.0, bottom: 10),
                 child: Text(
-                  'SIGN IN',
+                  Constants.SIGN_IN_TEXT,
                   style: TextStyle(fontSize: 30),
                 ),
               ),
@@ -63,7 +64,7 @@ class _SignInScreenState extends State<SignInScreen> {
                 padding: const EdgeInsets.only(top:30.0, left: 15, right: 15, bottom: 20),
                 child: TextFormField (
                   controller: _emailTextController,
-                  decoration: reusableDecoration("Enter Username", Icons.person_outline),
+                  decoration: reusableDecoration(Constants.ENTER_USERNAME_HINT, Icons.person_outline),
                   validator: validator.validateEmail,
                   ),
               ),
@@ -90,7 +91,7 @@ class _SignInScreenState extends State<SignInScreen> {
                           });
                         },
                       ),
-                      labelText: "Enter Password",
+                      labelText: Constants.ENTER_PASSWORD_HINT,
                       filled: true,
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(30.0),
@@ -143,7 +144,7 @@ class _SignInScreenState extends State<SignInScreen> {
                       showMaterialBanner(context, "Please enter your correct email-ID");
                     }
                   },
-                  child: const Text("Forgot Password?",
+                  child: const Text(Constants.FORGOT_PASSWORD_TEXT,
                       style: TextStyle(color: Colors.blueAccent, fontWeight: FontWeight.bold)),
                 ),
               )
@@ -182,7 +183,7 @@ class _SignInScreenState extends State<SignInScreen> {
             Navigator.push(context,
                 MaterialPageRoute(builder: (context) => const SignUpScreen()));
           },
-          child: const Text(" Sign Up",
+          child: const Text(Constants.SIGN_UP_TEXT,
               style: TextStyle(color: Colors.blueAccent, fontWeight: FontWeight.bold)),
         )
       ],

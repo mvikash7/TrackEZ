@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../utils/constants.dart';
+
 Container signInSignUpButton(BuildContext context, bool isLogin, Function onTap) {
   return Container(
     width: MediaQuery.of(context).size.width,
@@ -15,7 +17,7 @@ Container signInSignUpButton(BuildContext context, bool isLogin, Function onTap)
         shape: MaterialStateProperty.all<RoundedRectangleBorder>(
         RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)))),
       child: Text(
-              isLogin ? 'SIGN IN' : 'SIGN UP',
+              isLogin ? Constants.SIGN_IN_TEXT.toUpperCase() : Constants.SIGN_UP_TEXT.toUpperCase(),
               style: const TextStyle(color: Colors.white, fontSize: 16),
             ),
       ),

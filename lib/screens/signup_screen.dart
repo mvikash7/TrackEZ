@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:first_application/firebase_data/user_profile.dart';
 import 'package:first_application/screens/home_screen.dart';
+import 'package:first_application/utils/constants.dart';
 import 'package:first_application/utils/validator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_overlay_loader/flutter_overlay_loader.dart';
@@ -30,7 +31,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: commonAppBar(context, "Sign Up"),
+      appBar: commonAppBar(context, Constants.SIGN_UP_TEXT),
       body: SingleChildScrollView(
         child: Form(
           key: _formKey,
@@ -42,7 +43,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 child: TextFormField(
                   controller: _fullNameTextController,
                   decoration: reusableDecoration(
-                      "Enter Full Name", Icons.person_outline),
+                      Constants.ENTER_FULLNAME_HINT, Icons.person_outline),
                   validator: validator.validateUserName,
                 ),
               ),
@@ -52,7 +53,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 child: TextFormField(
                   controller: _emailTextController,
                   decoration: reusableDecoration(
-                      "E-mail ID", Icons.key),
+                      Constants.EMAIL_HINT, Icons.email_outlined),
                   validator: validator.validateEmail,
 
                 ),
@@ -63,7 +64,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 child: TextFormField(
                   controller: _passwordTextController,
                   decoration: reusableDecoration(
-                      "Enter Passwords", Icons.lock_outline),
+                      Constants.ENTER_PASSWORD_HINT, Icons.lock_outline),
                   validator: validator.validatePassword,
                   obscureText: true,
                 ),
@@ -74,7 +75,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 child: TextFormField(
                   controller: _confirmPasswordTextController,
                   decoration: reusableDecoration(
-                      "Confirm Password", Icons.lock),
+                      Constants.CONFORM_PASSWORD_HINT, Icons.lock),
                   validator: validator.validateConfirmPassword,
                   obscureText: true,
                 ),
@@ -85,7 +86,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 child: TextFormField(
                   controller: _managerNameTextController,
                   decoration: reusableDecoration(
-                      "Manager Name", Icons.manage_accounts_outlined),
+                      Constants.MANAGER_NAME_HINT, Icons.manage_accounts_outlined),
                   validator: validator.validateUserName,
                 ),
               ),
@@ -94,7 +95,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 padding: EdgeInsets.only(left: 20.0, top: 10),
                 child: Align(
                   alignment: Alignment.centerLeft,
-                  child: Text("User Type:", style: TextStyle(fontWeight: FontWeight.bold),),
+                  child: Text(Constants.USER_TYPE_TEXT, style: TextStyle(fontWeight: FontWeight.bold),),
                 ),
               ),
 

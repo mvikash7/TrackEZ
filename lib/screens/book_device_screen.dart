@@ -1,5 +1,6 @@
 import 'package:first_application/firebase_data/book_device_firebase.dart';
 import 'package:first_application/screens/home_screen.dart';
+import 'package:first_application/utils/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -35,7 +36,7 @@ class _BookDeviceState extends State<BookDeviceScreen>{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: commonAppBar(context, "Book Device"),
+      appBar: commonAppBar(context, Constants.BOOK_DEVICE_TEXT),
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -43,7 +44,7 @@ class _BookDeviceState extends State<BookDeviceScreen>{
               padding: EdgeInsets.only(top: 30, left: 20, right: 20),
               child: Align(
                 alignment: Alignment.topLeft,
-                child: Text("Select Device*"),
+                child: Text(Constants.SELECT_DEVICE_HINT),
               ),
             ),
 
@@ -78,7 +79,7 @@ class _BookDeviceState extends State<BookDeviceScreen>{
               padding: EdgeInsets.only(top: 30, left: 20, right: 20),
               child: Align(
                 alignment: Alignment.topLeft,
-                child: Text("Manager Name"),
+                child: Text(Constants.MANAGER_NAME_HINT),
               ),
             ),
 
@@ -99,7 +100,7 @@ class _BookDeviceState extends State<BookDeviceScreen>{
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(),
                   prefixIcon: Icon(Icons.calendar_today),
-                  labelText: "Booking Date From*"
+                  labelText: Constants.BOOKING_DATE_FROM_HINT
                 ),
                 readOnly: true,
                 onTap: () async {
@@ -126,7 +127,7 @@ class _BookDeviceState extends State<BookDeviceScreen>{
                 decoration: const InputDecoration(
                     border: OutlineInputBorder(),
                     prefixIcon: Icon(Icons.calendar_today),
-                    labelText: "Booking Date To*"
+                    labelText: Constants.BOOKING_DATE_TO_HINT
                 ),
                 readOnly: true,
                 onTap: () async {
@@ -149,14 +150,14 @@ class _BookDeviceState extends State<BookDeviceScreen>{
 
              Padding(
                 padding: const EdgeInsets.only(left: 20, right: 20, bottom: 30),
-                child: commonButton(context, "Book Device", () async {
+                child: commonButton(context, Constants.BOOK_DEVICE_TEXT, () async {
                   bookDevice(
                       userEmail!,
                       managerName!,
                       selectedDevice,
                       _fromDateInput.text,
                       _toDateInput.text,
-                  "Awaiting approval").then((value) => {
+                  Constants.STATUS_AWAITING_APPROVAL).then((value) => {
                         showAlertDialog(context, "Booked Successfully!"),
                   }).onError((error, stackTrace) => {
                     showAlertDialog(context, "$error")
