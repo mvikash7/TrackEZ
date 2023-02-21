@@ -30,7 +30,10 @@ class _HomeScreenState extends State<HomeScreen> {
     super.initState();
     _getUserProfileFromCache();
     pref.cacheUserSignInstateToTrue();
-    Loader.hide();
+    Future.delayed(const Duration(seconds: 1),()
+    {
+      Loader.hide();
+    });
   }
 
   @override
@@ -126,7 +129,7 @@ class _HomeScreenState extends State<HomeScreen> {
               Loader.show(context,
                   progressIndicator: const CircularProgressIndicator(
                     backgroundColor: Colors.blue,));
-              Future.delayed(const Duration(seconds: 1),() {
+              Future.delayed(const Duration(milliseconds: 300),() {
                 Loader.hide();
                 Navigator.of(context).pop(true);
               });
