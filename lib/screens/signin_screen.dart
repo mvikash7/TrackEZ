@@ -65,7 +65,7 @@ class _SignInScreenState extends State<SignInScreen> {
                 padding: const EdgeInsets.only(top:30.0, left: 15, right: 15, bottom: 20),
                 child: TextFormField (
                   controller: _emailTextController,
-                  decoration: reusableDecoration(Constants.ENTER_USERNAME_HINT, Icons.person_outline),
+                  decoration: reusableDecoration(Constants.ENTER_USERNAME_HINT, Icons.email_outlined),
                   validator: validator.validateEmail,
                   ),
               ),
