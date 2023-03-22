@@ -9,10 +9,10 @@ class Constants {
   static const SEARCH_TEXT = 'Search';
   static const MY_DEVICES_TEXT = 'My Devices';
   static const HISTORY_TEXT = 'History';
-  static const ENTER_USERNAME_HINT = 'Enter Username';
+  static const ENTER_USERNAME_HINT = 'Username';
 
-  static const ENTER_PASSWORD_HINT = 'Enter Password';
-  static const ENTER_FULLNAME_HINT = 'Enter Full Name';
+  static const ENTER_PASSWORD_HINT = 'Password';
+  static const ENTER_FULLNAME_HINT = 'Full Name';
   static const EMAIL_HINT = 'E-mail ID';
   static const CONFORM_PASSWORD_HINT = 'Confirm Password';
   static const MANAGER_NAME_HINT = 'Manager Name';
